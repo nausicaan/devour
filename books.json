@@ -1,0 +1,68 @@
+[
+	{
+	"isbn": "1940849039",
+	"author": "James Joyce",
+	"cover": "1940849039.jpg",
+	"genre": "Classic Literature",
+	"pages": 702,
+	"publisher": "Shakespeare and Company",
+	"synopsis": "Ulysses chronicles the peripatetic appointments and encounters of Leopold Bloom in Dublin in the course of an ordinary day, 16 June 1904. Ulysses is the Latinised name of Odysseus, the hero of Homer's epic poem the Odyssey, and the novel establishes a series of parallels between the poem and the novel.",
+	"title": "Ulysses",
+	"year": 1922
+	},
+	{
+	"isbn": "0375703861",
+	"author": "Zadie Smith",
+	"cover": "0375703861.jpg",
+	"genre": "Contemporary Literature",
+	"pages": 464,
+	"publisher": "Hamish Hamilton",
+	"synopsis": "White Teeth focuses on the later lives of two wartime friends—the Bangladeshi Samad Iqbal and the Englishman Archie Jones—and their families in London. The novel is centred around Britain's relationships with people from formerly colonised countries in Africa, Asia, and the Caribbean.",
+	"title": "White Teeth",
+	"year": 2001
+	},
+	{
+	"isbn": "0385721790",
+	"author": "Ian McEwan",
+	"cover": "0385721790.jpg",
+	"genre": "Historical Fiction",
+	"pages": 351,
+	"publisher": "Anchor Books",
+	"synopsis": "Atonement is a 2001 novel by British author Ian McEwan. It tells the story of protagonist Briony Tallis's crime and how it changes her life, as well as those of her sister Cecilia and her lover Robbie Turner, and her consequential effort to atone.",
+	"title": "Atonement",
+	"year": 2003
+	},
+	{
+	"isbn": "0553380163",
+	"author": "Stephen Hawking",
+	"cover": "0553380163.jpg",
+	"genre": "Cosmology",
+	"pages": 256,
+	"publisher": "Bantam Books",
+	"synopsis": "This book deals with profound questions as: How did the universe begin—and what made its start possible? Does time always flow forward? Is the universe unending—or are there boundaries?",
+	"title": "A Brief History of Time",
+	"year": 1988
+	},
+	{
+	"isbn": "0571084838",
+	"author": "William Golding",
+	"cover": "0571084838.jpg",
+	"genre": "Allegorical Fiction",
+	"pages": 224,
+	"publisher": "Faber and Faber",
+	"synopsis": "The tale of a party of shipwrecked schoolboys, marooned on a coral island, who at first enjoy the freedom of the situation but soon divide into fearsome gangs.",
+	"title": "Lord of the Flies",
+	"year": 1954
+	},
+	{
+	"isbn": "0676973778",
+	"author": "Yann Martel",
+	"cover": "0676973778.jpg",
+	"genre": "Novella",
+	"pages": 356,
+	"publisher": "Knopf Canada",
+	"synopsis": "After the tragic sinking of a cargo ship, a solitary lifeboat remains bobbing on the Pacific. The only survivors from the wreck are a sixteen-year-old boy named Pi, a hyena, a zebra (with a broken leg), a female orangutan--and a 450-pound Bengal tiger.",
+	"title": "Life of Pi",
+	"year": 2001
+	}
+]

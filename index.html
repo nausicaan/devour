@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home | Devour Book Tracker</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes, shrink-to-fit=no">
+		<meta name="author" content="Byron Stuike">
+		<meta name="description" content="PWA Transformation Project">
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Devour Book Tracker">
+		<meta name="apple-mobile-web-app-title" content="Devour">
+		<meta name="theme-color" content="#7B1FA2">
+		<meta name="msapplication-navbutton-color" content="#7B1FA2">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="msapplication-starturl" content="index.html">
+
+		<link rel="icon" sizes="128x128" href="images/touch/128-icon.png">
+		<link rel="apple-touch-icon" sizes="128x128" href="images/touch/128-icon.png">
+		<link rel="icon" sizes="192x192" href="images/touch/192-icon.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="images/touch/192-icon.png">
+		<link rel="icon" sizes="256x256" href="images/touch/256-icon.png">
+		<link rel="apple-touch-icon" sizes="256x256" href="images/touch/256-icon.png">
+		<link rel="icon" sizes="384x384" href="images/touch/384-icon.png">
+		<link rel="apple-touch-icon" sizes="384x384" href="images/touch/384-icon.png">
+		<link rel="icon" sizes="512x512" href="images/touch/512-icon.png">
+		<link rel="apple-touch-icon" sizes="512x512" href="images/touch/512-icon.png">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/x-icon" href="logos/logo-small.svg">
+		<link rel="manifest" href="manifest.json">
+	</head>
+
+	<body>
+		<header>
+			<ul>
+				<li><img src="logos/logo-small.svg" alt="small logo" width="27" height="32"></li>
+				<li><a href="library.html" target="_top"><img src="icons/database.svg" alt="library" width="37" height="32"></a></li>
+			</ul>
+			<input type="text" placeholder="Search for books...">
+		</header>
+		<main>
+			<section>
+				<img src="logos/logo-large.svg" alt="large logo">
+				<h1 id="greeting">Choose a book to learn more:</h1>
+				<div id="showcase"></div>
+			</section>
+			<table id="shelf"></table>
+			<button id="reload" title="Reload">Back</button>
+			<button id="up" title="Go to top">Top</button>
+		</main>
+		<script src="books.json"></script>
+		<script src="script.js"></script>
+		<script>
+			let allBooks = [];
+			readTextFile("books.json", function(text){
+				allBooks = JSON.parse(text);
+				getShowcase(allBooks);
+			});
+
+			showcase.addEventListener('click', (e) => {
+				if (e.target && e.target.nodeName.toLowerCase() == "img") {
+					let bookTitle = e.target.alt;
+					greeting.textContent = bookTitle;
+					getBookDetails(bookTitle);
+					reload.style.display = "block";
+				}
+			});
+
+			reload.addEventListener('click', () => {
+				greeting.textContent = "Choose a book to learn more";
+				getShowcase(allBooks);
+				reload.style.display = "none";
+			});
+		</script>
+	</body>
+</html>

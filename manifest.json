@@ -1,0 +1,47 @@
+{
+	"name": "Devour Book Tracker",
+	"short_name": "Devour",
+	"lang": "en-US",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"theme_color": "#9C27B0",
+	"background_color": "#7B1FA2",
+	"icons": [
+		{
+			"src": "/images/touch/128-icon.png",
+			"sizes": "128x128",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/touch/192-icon.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/touch/256-icon.png",
+			"sizes": "256x256",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/touch/384-icon.png",
+			"sizes": "384x384",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/touch/512-icon.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/touch/1024-icon.png",
+			"sizes": "1024x1024",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}
